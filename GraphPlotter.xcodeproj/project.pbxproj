@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CEA0CDE01F8D613000079CE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0CDDF1F8D613000079CE1 /* AppDelegate.swift */; };
-		CEA0CDE21F8D613000079CE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0CDE11F8D613000079CE1 /* ViewController.swift */; };
+		CEA0CDE21F8D613000079CE1 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0CDE11F8D613000079CE1 /* GraphView.swift */; };
 		CEA0CDE51F8D613000079CE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA0CDE31F8D613000079CE1 /* Main.storyboard */; };
 		CEA0CDE71F8D613000079CE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA0CDE61F8D613000079CE1 /* Assets.xcassets */; };
 		CEA0CDEA1F8D613000079CE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA0CDE81F8D613000079CE1 /* LaunchScreen.storyboard */; };
+		CEA0CDF31F8D618200079CE1 /* AxesDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0CDF21F8D618200079CE1 /* AxesDrawer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEA0CDDC1F8D613000079CE1 /* GraphPlotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphPlotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA0CDDF1F8D613000079CE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEA0CDE11F8D613000079CE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEA0CDE11F8D613000079CE1 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		CEA0CDE41F8D613000079CE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA0CDE61F8D613000079CE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA0CDE91F8D613000079CE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA0CDEB1F8D613000079CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA0CDF21F8D618200079CE1 /* AxesDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AxesDrawer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		CEA0CDDE1F8D613000079CE1 /* GraphPlotter */ = {
 			isa = PBXGroup;
 			children = (
-				CEA0CDDF1F8D613000079CE1 /* AppDelegate.swift */,
-				CEA0CDE11F8D613000079CE1 /* ViewController.swift */,
+				CEA0CDF21F8D618200079CE1 /* AxesDrawer.swift */,
+				CEA0CDF11F8D615000079CE1 /* Supporting Files */,
+				CEA0CDE11F8D613000079CE1 /* GraphView.swift */,
 				CEA0CDE31F8D613000079CE1 /* Main.storyboard */,
+			);
+			path = GraphPlotter;
+			sourceTree = "<group>";
+		};
+		CEA0CDF11F8D615000079CE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0CDDF1F8D613000079CE1 /* AppDelegate.swift */,
 				CEA0CDE61F8D613000079CE1 /* Assets.xcassets */,
 				CEA0CDE81F8D613000079CE1 /* LaunchScreen.storyboard */,
 				CEA0CDEB1F8D613000079CE1 /* Info.plist */,
 			);
-			path = GraphPlotter;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA0CDE21F8D613000079CE1 /* ViewController.swift in Sources */,
+				CEA0CDE21F8D613000079CE1 /* GraphView.swift in Sources */,
 				CEA0CDE01F8D613000079CE1 /* AppDelegate.swift in Sources */,
+				CEA0CDF31F8D618200079CE1 /* AxesDrawer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
