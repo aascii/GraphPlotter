@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Graph Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GraphPlotter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GraphController" customModule="GraphPlotter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,22 +24,40 @@
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xLq-o1-qqg" customClass="GraphView" customModule="GraphPlotter" customModuleProvider="target">
                                 <rect key="frame" x="16" y="28" width="343" height="631"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfa-6F-Mem">
+                                        <rect key="frame" x="5" y="604" width="30" height="30"/>
+                                        <state key="normal" title="GO"/>
+                                        <connections>
+                                            <action selector="plot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="97T-uf-hss"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFn-gV-Xdw">
+                                        <rect key="frame" x="296" y="-3" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="axisScale">
-                                        <real key="value" value="13"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="xLq-o1-qqg" secondAttribute="trailing" id="F3f-b2-PMm"/>
+                            <constraint firstItem="kFn-gV-Xdw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="HBa-He-xSR"/>
+                            <constraint firstItem="zfa-6F-Mem" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="SWP-f2-xWZ"/>
                             <constraint firstItem="xLq-o1-qqg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cNg-jQ-b0u"/>
                             <constraint firstItem="xLq-o1-qqg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="lMG-hb-SJk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kFn-gV-Xdw" secondAttribute="trailing" constant="5" id="ps7-in-Z5E"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xLq-o1-qqg" secondAttribute="bottom" constant="8" symbolic="YES" id="qcc-Mm-Q3f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zfa-6F-Mem" secondAttribute="bottom" constant="5" id="rmc-zx-egv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="functionLabel" destination="kFn-gV-Xdw" id="3YG-rk-2Nz"/>
+                        <outlet property="graphPlot" destination="xLq-o1-qqg" id="vrY-oH-fsv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

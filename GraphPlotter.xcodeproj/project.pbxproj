@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3298271F8EAD4E00066D92 /* GraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3298261F8EAD4E00066D92 /* GraphController.swift */; };
 		CEA0CDE01F8D613000079CE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0CDDF1F8D613000079CE1 /* AppDelegate.swift */; };
 		CEA0CDE21F8D613000079CE1 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0CDE11F8D613000079CE1 /* GraphView.swift */; };
 		CEA0CDE51F8D613000079CE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA0CDE31F8D613000079CE1 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3298261F8EAD4E00066D92 /* GraphController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphController.swift; path = ../GraphController.swift; sourceTree = "<group>"; };
 		CEA0CDDC1F8D613000079CE1 /* GraphPlotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphPlotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA0CDDF1F8D613000079CE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA0CDE11F8D613000079CE1 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		CEA0CDDE1F8D613000079CE1 /* GraphPlotter */ = {
 			isa = PBXGroup;
 			children = (
+				CE3298261F8EAD4E00066D92 /* GraphController.swift */,
 				CEA0CDF21F8D618200079CE1 /* AxesDrawer.swift */,
 				CEA0CDF11F8D615000079CE1 /* Supporting Files */,
 				CEA0CDE11F8D613000079CE1 /* GraphView.swift */,
@@ -150,6 +153,7 @@
 			files = (
 				CEA0CDE21F8D613000079CE1 /* GraphView.swift in Sources */,
 				CEA0CDE01F8D613000079CE1 /* AppDelegate.swift in Sources */,
+				CE3298271F8EAD4E00066D92 /* GraphController.swift in Sources */,
 				CEA0CDF31F8D618200079CE1 /* AxesDrawer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +318,7 @@
 				CEA0CDF01F8D613000079CE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
